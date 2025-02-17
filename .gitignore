@@ -22,3 +22,32 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Ignorar pastas do IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Ignorar pastas de build do Maven
+target/
+!src/main/resources/
+
+# Ignorar dependências baixadas pelo Maven (opcional, melhor usar `.m2/repository` globalmente)
+.mvn/
+**/mvnw
+**/mvnw.cmd
+**/pom.xml.tag
+**/pom.xml.releaseBackup
+**/pom.xml.next
+**/release.properties
+
+# Ignorar logs
+*.log
+
+# Ignorar arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignorar o config.properties dentro da pasta resources
+src/main/resources/config.properties
